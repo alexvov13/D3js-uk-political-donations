@@ -77,7 +77,7 @@ function transition(name) {
 	}
 
 function start() {
-	.on("click", function(d) { window.open("http://www.google.com/search?q=" + d.donor);});
+	
 
 	node = nodeGroup.selectAll("circle")
 		.data(nodes)
@@ -107,6 +107,11 @@ function start() {
 		node.transition()
 			.duration(2500)
 			.attr("r", function(d) { return d.radius; });
+
+		.on("click", function(d) 
+	   		 { window.open("http://www.google.com/search?q=" + d.donor);});
+
+
 }
 
 function total() {
