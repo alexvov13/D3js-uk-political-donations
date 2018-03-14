@@ -74,7 +74,11 @@ function transition(name) {
 		$("#view-party-type").fadeOut(250);
 		$("#view-source-type").fadeIn(1000);
 		return fundsType();
-	}
+	
+	} if (name === "group-by-the-amount-of-the-donation")
+		$("#initial-content").fadeOut(250);
+		$("#value-scale").fadeOut(250);
+		
 
 function start() {
 	
