@@ -77,6 +77,7 @@ function transition(name) {
 	}
 
 function start() {
+	.on("click", function(d) { window.open("http://www.google.com/search?q=" + d.donor);});
 
 	node = nodeGroup.selectAll("circle")
 		.data(nodes)
