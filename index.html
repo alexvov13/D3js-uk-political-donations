@@ -13,6 +13,16 @@
 }
        
 </style>
+  
+   <audio id="sound" src="Button.mp3"></audio>
+    <a onclick = "playSound();"></a>
+    <script>
+        function playSound() {
+          var sound = document.getElementById("sound");
+          sound.play();
+      }
+
+
 
 <div class="zoom"></div>
     
@@ -53,7 +63,7 @@
     <nav role="navigation">
         <ul  class=zoom>
            
-           <li><a href="#" role="button" class="pure-button switch" id="all-donations">All money</a>
+           <li><a href="#" role="button" class="pure-button switch" id="all-donations" onclick = "playSound()">All money</a>
             </li>
             <li><a href="#" role="button" class="pure-button switch" id="group-by-money-source">The public's purse</a>
             </li>
