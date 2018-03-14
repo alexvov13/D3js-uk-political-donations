@@ -53,7 +53,20 @@
     </header>
     <nav role="navigation">
         <ul>
-            <li><a href="#" role="button" class="pure-button switch" id="all-donations">All money</a>
+           <style>
+      .zoom {
+    
+    transition: transform .2s; /* Animation */    
+      }
+
+      .zoom:hover {
+         transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+       
+</style>
+
+<div class="zoom"></div> 
+           <li><a href="#" role="button" class="pure-button switch" id="all-donations">All money</a>
             </li>
             <li><a href="#" role="button" class="pure-button switch" id="group-by-money-source">The public's purse</a>
             </li>
@@ -65,17 +78,7 @@
     </nav>
 
     <div id="annotations">
-<style>
-.zoom {
-    
-    transition: transform .2s; /* Animation */    
-}
 
-.zoom:hover {
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-       
-</style>
         <!-- Initial annotations -->
         <div id="initial-content">
             <h2>Political donations and funding accepted by the Conservatives, Labour and Liberal Democrats between the 2010 general election and August 2013, when this data was collected.</h2>
