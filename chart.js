@@ -357,8 +357,10 @@ function mouseover(d, i) {
 			.style("display","block");
 	
 	
+	
+responsiveVoice.speak(donor + " " + amount + "£","UK English Male",{volume: 1});
 	}
-
+	
 function mouseout() {
 	// no more tooltips
 		var mosie = d3.select(this);
